@@ -1,0 +1,18 @@
+{
+  "x86_64": {
+    "download": {
+      "CloudResetPwdAgent": "http://cn-south-1-cloud-reset-pwd.obs.myhwclouds.com/linux/64/reset_pwd_agent/CloudResetPwdAgent.zip"
+    },
+    "file": {
+      "CloudResetPwdAgent": "CloudResetPwdAgent.zip"
+    }
+  },
+  "aarch64": {
+    "download": {
+      "CloudResetPwdAgent": "http://cn-south-1-cloud-reset-pwd.obs.myhwclouds.com/linux/64/reset_pwd_agent/CloudResetPwdAgent.zip"
+    },
+    "file": {
+      "CloudResetPwdAgent": "CloudResetPwdAgent.zip"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "x86_64": {
+    "m": 8192,
+    "smp": 4,
+    "boot": "d",
+    "drive": "file={img_path},format=raw,index=0,media=disk",
+    "cdrom": "{iso_path}",
+    "kernel": "{vmlinuz_path}",
+    "initrd": "{initrd_path}",
+    "append": "{kernel_args} ks=http://10.0.2.2:8000/ks.cfg"
+  },
+  "aarch64": {
+    "m": 8192,
+    "smp": 4,
+    "boot": "d",
+    "machine": "virt",
+    "cpu": "cortex-a72",
+    "bios": "{bios_path}",
+    "drive": [
+      "if=none,file={img_path},format=raw,id=hd0",
+      "if=none,file={iso_path},id=cdrom,media=cdrom"
+    ],
+    "device": [
+      "virtio-scsi-device",
+      "scsi-cd,drive=cdrom",
+      "virtio-blk-device,drive=hd0"
+    ],
+    "monitor": "null",
+    "kernel": "{vmlinuz_path}",
+    "initrd": "{initrd_path}",
+    "append": "{kernel_args} ks=http://10.0.2.2:8000/ks.cfg"
+  }
+}

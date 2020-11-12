@@ -1,0 +1,12 @@
+{
+  "x86_64": {
+    "m": 8192,
+    "smp": 4,
+    "boot": "d",
+    "drive": "file={img_path},format=raw,index=0,media=disk",
+    "cdrom": "{iso_path}",
+    "kernel": "{vmlinuz_path}",
+    "initrd": "{initrd_path}",
+    "append": "{kernel_args} ks=http://10.0.2.2:8000/ks.cfg"
+  }
+}
