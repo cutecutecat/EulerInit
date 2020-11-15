@@ -1,5 +1,6 @@
 # EulerInit文档
 
+
 [TOC]
 
 ## 概述
@@ -13,7 +14,7 @@ EulerInit是一个便捷的镜像转换工具，用于将openEuler系统自动�
 | x86_64  |   √    |   √    |   √    |
 | aarch64 |   x    |   √    |   x    |
 
-EulerInit在宿主机Windows 10和Ubuntu 20.04上通过了镜像生成测试。
+EulerInit在宿主机Windows 10和Ubuntu 20.04上通过了openEuler-20.03-LTS镜像生成测试。
 
 ## 准备工作
 
